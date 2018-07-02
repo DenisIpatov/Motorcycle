@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas/Bebas.eot');
+    src: local('☺'), url('../fonts/Bebas/Bebas.woff') format('woff'), url('../fonts/Bebas/Bebas.ttf') format('truetype'), url('../fonts/Bebas/Bebas.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Bold';
+    src: url('../fonts/Bebas Neue Bold/Bebas Neue Bold.eot');
+    src: local('☺'), url('../fonts/Bebas Neue Bold/Bebas Neue Bold.woff') format('woff'), url('../fonts/Bebas Neue Bold/Bebas Neue Bold.ttf') format('truetype'), url('../fonts/Bebas Neue Bold/Bebas Neue Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Book';
+    src: url('../fonts/Bebas Neue Book/Bebas Neue Book.eot');
+    src: local('☺'), url('../fonts/Bebas Neue Book/Bebas Neue Book.woff') format('woff'), url('../fonts/Bebas Neue Book/Bebas Neue Book.ttf') format('truetype'), url('../fonts/Bebas Neue Book/Bebas Neue Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'big_noodle';
+    src: url('../fonts/big_noodle_titling/big_noodle_titling.eot');
+    src: local('☺'), url('../fonts/big_noodle_titling/big_noodle_titling.woff') format('woff'), url('../fonts/big_noodle_titling/big_noodle_titling.ttf') format('truetype'), url('../fonts/big_noodle_titling/big_noodle_titling.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Billy';
+    src: url('../fonts/Billy Ohio/Billy Ohio.eot');
+    src: local('☺'), url('../fonts/Billy Ohio/Billy Ohio.woff') format('woff'), url('../fonts/Billy Ohio/Billy Ohio.ttf') format('truetype'), url('../fonts/Billy Ohio/Billy Ohio.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaLTStd BoldCond/HelveticaLTStd BoldCond.eot');
+    src: local('☺'), url('../fonts/HelveticaLTStd BoldCond/HelveticaLTStd BoldCond.woff') format('woff'), url('../fonts/HelveticaLTStd BoldCond/HelveticaLTStd BoldCond.ttf') format('truetype'), url('../fonts/HelveticaLTStd BoldCond/HelveticaLTStd BoldCond.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Medium/Lato-Medium.eot');
+    src: local('☺'), url('../fonts/Lato-Medium/Lato-Medium.woff') format('woff'), url('../fonts/Lato-Medium/Lato-Medium.ttf') format('truetype'), url('../fonts/Lato-Medium/Lato-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoItalic';
+    src: url('../fonts/Lato-MediumItalic/Lato-MediumItalic.eot');
+    src: local('☺'), url('../fonts/Lato-MediumItalic/Lato-MediumItalic.woff') format('woff'), url('../fonts/Lato-MediumItalic/Lato-MediumItalic.ttf') format('truetype'), url('../fonts/Lato-MediumItalic/Lato-MediumItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+// 	font-family: 'Montserrat';
+// 	src: url('../fonts/Montserrat/Montserrat.eot');
+// 	src: local('☺'), url('../fonts/Montserrat/Montserrat.woff') format('woff'), url('../fonts/Montserrat/Montserrat.ttf') format('truetype'), url('../fonts/Montserrat/Montserrat.svg') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+$bebas: 'Bebas',
+sans-serif;
+$bebasBold: 'Bebas Bold',
+sans-serif;
+$bebasBook: 'Bebas Book',
+sans-serif;
+$billy: 'Billy',
+sans-serif;
+$Helvetica: 'Helvetica',
+sans-serif;
+$lato: 'Lato',
+sans-serif;
+$latoItalic: 'LatoItalic',
+sans-serif;
+$montserrat: 'Montserrat',
+sans-serif;
+body * {
+    font-family: $lato;
+    color: #676767;
+}
+
+.abs {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.backgr {
+    img{
+        z-index: -1;
+    }
+    // background: url("../img/headerImage.png") no-repeat no-repeat;
+    // background-position: 50% 50%;
+}
+
+// меню сверху
+.navbar-nav {
+    float: right;
+    text-align: center;
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-family: $montserrat;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:hover,
+    &:focus {
+        color: #fff;
+        outline: none;
+    }
+}
+.topMenu{
+    height: 100px;
+    line-height: 100px;
+    padding: 0  50px;
+}
+.soc{
+    margin-left: 30px;
+    i{
+        font-size: 16px;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 40px;
+    }
+}
+.bigText{
+    p{
+        color: #fff;
+        font-size: 112px;
+        font-family: $billy;
+        line-height: 0.8;
+        margin-top: 90px;
+    }
+}
+.motorHead{
+    img{
+        margin: 0 auto;
+    }
+}
