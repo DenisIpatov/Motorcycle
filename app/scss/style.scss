@@ -99,11 +99,9 @@ body * {
 }
 
 .backgr {
-    img{
-        z-index: -1;
-    }
-    // background: url("../img/headerImage.png") no-repeat no-repeat;
-    // background-position: 50% 50%;
+    background: url("../img/headerImage.png") no-repeat no-repeat;
+    background-position: 50% 50%;
+    min-height: 970px;
 }
 
 // меню сверху
@@ -176,5 +174,32 @@ body * {
 .motorHead{
     img{
         margin: 0 auto;
+    }
+}
+
+.motorBlock{
+    padding-left: 20px;
+    padding-right: 20px;
+    .wrapImgs{
+        img.triangle{
+            bottom: -20px;
+            left: -20px;
+        }
+        p.price{
+            bottom: 10px;
+            left: 0;
+            color: #fff;
+            font-family: $bebas, sans-serif;
+            span:first{
+                color: yellow;
+            }
+        }
+    }
+    h3{
+        font-family: $Helvetica, sans-serif;
+        font-size: 26px;
+    }
+    p{
+
     }
 }
