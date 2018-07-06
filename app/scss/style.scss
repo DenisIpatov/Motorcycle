@@ -69,6 +69,10 @@
 // 	font-weight: normal;
 // 	font-style: normal;
 // }
+body {
+    background-color: #ededed;
+}
+
 $bebas: 'Bebas',
 sans-serif;
 $bebasBold: 'Bebas Bold',
@@ -142,14 +146,16 @@ body * {
         outline: none;
     }
 }
-.topMenu{
+
+.topMenu {
     height: 100px;
     line-height: 100px;
-    padding: 0  50px;
+    padding: 0 50px;
 }
-.soc{
+
+.soc {
     margin-left: 30px;
-    i{
+    i {
         font-size: 16px;
         color: #fff;
         width: 40px;
@@ -162,8 +168,9 @@ body * {
         line-height: 40px;
     }
 }
-.bigText{
-    p{
+
+.bigText {
+    p {
         color: #fff;
         font-size: 112px;
         font-family: $billy;
@@ -171,35 +178,160 @@ body * {
         margin-top: 90px;
     }
 }
-.motorHead{
-    img{
+
+.motorHead {
+    img {
         margin: 0 auto;
     }
 }
 
-.motorBlock{
-    padding-left: 20px;
-    padding-right: 20px;
-    .wrapImgs{
-        img.triangle{
+.motorBlock {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 140px;
+    .wrapImgs {
+        margin-bottom: 40px;
+        img.triangle {
             bottom: -20px;
             left: -20px;
         }
-        p.price{
+        p.price {
             bottom: 10px;
             left: 0;
             color: #fff;
             font-family: $bebas, sans-serif;
-            span:first{
-                color: yellow;
+            font-size: 40px;
+            line-height: 0.7;
+            padding: 0;
+            margin: 0;
+            span:first-child {
+                font-family: $bebas, sans-serif;
+                font-size: 54px;
+                color: #fff;
+                font-family: $bebas, sans-serif;
+            }
+            span:last-child {
+                font-size: 22px;
+                color: #fff;
+                font-family: $bebasBook, sans-serif;
             }
         }
     }
-    h3{
+    h3 {
         font-family: $Helvetica, sans-serif;
         font-size: 26px;
+        color: #202020;
+        margin-bottom: 20px;
     }
-    p{
+    p {
+        font-size: 18px;
+        color: #676767;
+        font-family: $lato, sans-serif;
+        margin-bottom: 0;
+    }
+    a.btn {
+        background-color: #cd0a2d;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        line-height: 20px;
+        font-family: $bebasBold, sans-serif;
+    }
+}
 
+.textBlocks {
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &.left{
+        padding-right: 135px;
     }
+    &.right{
+        padding-left: 160px;
+        margin-top: 90px;
+    }
+    h2 {
+        font-size: 64px;
+        font-family: $bebasBold, sans-serif;
+        color: #fff;
+        margin: 0;
+    }
+    .texblocklItem {
+        padding-top: 35px;
+        h4 {
+            margin: 0;
+            font-size: 24px;
+            font-family: $Helvetica, sans-serif;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.439);
+            font-size: 18px;
+            font-family: $lato, sans-serif;
+        }
+    }
+    .riders {
+        margin-bottom: 40px;
+        div:first-child {
+            float: left;
+            display: inline-block;
+            width: 130px;
+            margin-right: 20px;
+        }
+        div.nameBlock {
+            p:first-child {
+                margin: 0px;
+            }
+            p span:first-child {
+                font-family: $bebasBold, sans-serif;
+                font-size: 46px;
+                color: #5e5e5e;
+                vertical-align: middle;
+            }
+            p span:last-child {
+                font-family: $bebasBook, sans-serif;
+                font-size: 24px;
+                color: #979797;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+            p:last {
+                font-size: 18px;
+            }
+        }
+        &:nth-child(even) {
+            div:first-child {
+                float: right;
+                display: inline-block;
+                width: 130px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.motorCenter {
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    max-height: 760px;
+    top: -70px;
+}
+
+.redDiv {
+    background-color: tomato;
+    min-height: 610px;
+    width: 50%;
+    left: 0;
+}
+
+.whiteDiv {
+    background-color: #fff;
+    min-height: 610px;
+    width: 50%;
+    left: 50%;
+    top: 60px;
 }
